@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <div className={styles.scroller}></div>
       <div className={styles.title_container}>
-        <span className={styles.greetings}>Hi, I'm Im</span>
+        <span className={styles.greetings}>Hi, I&apos;m Im</span>
         <div className={styles.description}>Full Stack Developer</div>
         <button className={styles.contact_button}><Link href="/contacts"><a>Contact Me</a></Link></button>
       </div>
