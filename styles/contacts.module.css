@@ -1,0 +1,35 @@
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "scroller contents";
+    grid-template-columns: 2fr 10fr;
+}
+
+.contents {
+    grid-area: contents;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+.card {
+    height: 20em;
+    width: 40em;
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 1fr 1fr;
+}
+
+.left_side {
+    grid-area: left;
+    /* background-color: white; */
+    position: relative;
+}
+
+.right_side {
+    grid-area: right;
+    /* background-color: #68BBE3; */
+}

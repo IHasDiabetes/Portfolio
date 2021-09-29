@@ -1,0 +1,34 @@
+
+
+.container {
+    background-color: #00264B;
+    height: 2.5em;
+    display: grid;
+    grid-template-areas: "github . pages sidebar";
+    grid-template-columns: 5fr 25fr 15fr 5fr;
+}
+
+.container * {
+    background-color: #00264B;
+    height: 2.5em;
+}
+
+.github {
+    grid-area: github;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.navigator {
+    grid-area: pages;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0.5em
+}
+
+.navigator a{
+    margin: 0.75em;
+}
+

@@ -1,0 +1,52 @@
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "scroller text contents";
+    grid-template-columns: 2fr 5fr 5fr;
+    
+}
+
+.text {
+    grid-area: text;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+}
+
+.skills_container {
+    width: fit-content;
+    height: 16em;
+    overflow-y: scroll;
+}
+
+.skills {
+    font-size: 1.75rem;
+    font-weight: 500;
+    overflow: scroll;
+}
+
+.skills * {
+    padding-left: 1em;
+}
+
+.level {
+    padding-left: 2em;
+    padding-right: 1em;
+}
+
+.skills_container::-webkit-scrollbar {
+    width: 0.75vw;
+}
+
+.skills_container::-webkit-scrollbar-thumb {
+    background-color: #68BBE3;
+    border-radius: 1em;
+}
+
+.contents {
+    grid-area: contents;
+}
