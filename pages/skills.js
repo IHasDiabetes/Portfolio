@@ -8,7 +8,7 @@ import django from '../public/django.png'
 
 export default function Skills() {
     // const mySkills = ["javascript", "django", "css", "python", "c", "c++", "c#", "java", "php"]
-    const [skills, setSkills] = useState("");
+    const [skills, setSkills] = useState("js");
 
 
   return (

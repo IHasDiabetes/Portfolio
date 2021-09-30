@@ -16,20 +16,161 @@
 }
 
 .card {
-    height: 20em;
+    margin-top: 1em;
+    margin-left: 1em;
+    height: 21em;
     width: 40em;
+    background-color: white;
     display: grid;
     grid-template-areas: "left right";
     grid-template-columns: 1fr 1fr;
 }
 
+
 .left_side {
+    padding-left: 0.5em;
+    padding-top: 0.5em;
     grid-area: left;
-    /* background-color: white; */
-    position: relative;
+    background-color: white;
+}
+
+.left_side * {
+    color: #003060;
 }
 
 .right_side {
+    background-color: #68BBE3;
     grid-area: right;
-    /* background-color: #68BBE3; */
+    display: grid;
+    grid-template-areas: 
+        "ty"
+        "icons"
+        "footer";
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+}
+
+.right_side * {
+    color: white;
+}
+
+.blocks {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.form {
+    grid-area: fname_form;
+    margin-left: 1em;
+    border: none;
+    border-bottom: 0.15em solid #003060;
+    outline: none;
+    font-size: 0.8rem;
+    max-width: 100%;
+    min-width: 75%;
+}
+
+.message {
+    border: 0.15em solid #003060;
+    resize: vertical;
+    outline: none;
+    font-size: 0.8rem;
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 18em;
+    height: 7em;
+}
+
+.message::-webkit-scrollbar {
+    width: 0.7vw;
+}
+
+.message::-webkit-scrollbar-thumb {
+    background-color: #8ed6fab4;
+    border-radius: 1em;
+}
+
+.message::-webkit-scrollbar-thumb:hover {
+    background-color: #68BBE3;
+    border-radius: 1em;
+  }
+
+.button{
+    float: right;
+    margin-right: 6em;
+    background-color: #68BBE3;
+    color: white;
+    border-radius: 0.2em;
+    border-style: none;
+    height: 2.25em;
+    width: 5.25em;
+}
+
+.button *{
+    background-color: #68BBE3;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.ty, .icons, .footer {
+    margin-top: 1rem;
+}
+
+.ty {
+    text-align: center;
+    grid-area: ty;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.icons {
+    grid-area: icons;
+    text-align: center;
+}
+
+.icon1, .icon2, .icon3 {
+    padding-top: 1em;
+}
+
+.line_container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 2em;
+    width: 2em;
+}
+
+.icon1 svg {
+    font-size: 1.5em;
+}
+
+.icon3 svg {
+    font-size: 1.5em;
+}
+
+.text {
+    font-size: 0.5rem;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: "contact base";
+    padding: 1em;
+}
+
+.footer_title {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.footer_description {
+    font-size: 0.5rem;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.base {
+    grid-area: base;
 }
