@@ -1,5 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/projects.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
+import ukp from '../public/ukp.svg'
+import cs50w from '../public/CS50W.png'
 
 export default function Projects() {
   return (
@@ -10,14 +14,25 @@ export default function Projects() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <div className={styles.text}>
-        <div className={styles.title}>Projects</div>
+        <div className={styles.title}>Portfolio</div>
         <div className={styles.projects_container}>
+          <a target="_blank" href="https://github.com/me50/IHasDiabetes/tree/web50/projects%2F2020%2Fx%2Fcapstone" rel="noopener noreferrer">
           <div className={styles.projects_contents}>
-            <div className={styles.projects_logo}>logo</div>
+            <div className={styles.projects_logo}><Image className={styles.ukp} src={ukp} alt="UKP" /></div>
             <div className={styles.line}></div>
-            <div className={styles.projects_title}>Title</div>
-            <div className={styles.projects_description}>Description</div>
+            <div className={styles.projects_title}>Untitled Keyboard Project</div>
+            <div className={styles.projects_description}>A website that let's you customize and build your own mechanical keyboard</div>
           </div>
+          </a>
+
+          <a target="_blank" href="https://certificates.cs50.io/b63a5cbc-ccb5-4a9a-b5d7-9c15631407d8.pdf?size=letter" rel="noopener noreferrer">
+          <div className={styles.projects_contents}>
+            <div className={styles.projects_logo}><Image className={styles.cs50w} src={cs50w} alt="CS50 Certificate" /></div>
+            <div className={styles.line}></div>
+            <div className={styles.projects_title}>CS50’s Web Programming Certificate</div>
+            <div className={styles.projects_description}>The certificate from CS50’s Web Programming with Python and JavaScript course</div>
+          </div>
+          </a>
           <div className={styles.note}>- Got Room For More -</div>
         </div>
       </div>

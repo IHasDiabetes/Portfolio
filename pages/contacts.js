@@ -16,7 +16,7 @@ export default function Contacts() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <div className={styles.contents}>
-        <div className={styles.title}>Contacts Page</div>
+        <div className={styles.title}>Contacts</div>
 
         <div className={styles.card}>
 

@@ -10,7 +10,7 @@ export default function Layout({ children }) {
                         <Link href="/"><a>Home</a></Link>
                         <Link href="/about"><a>About</a></Link>
                         <Link href="/skills"><a>Skills</a></Link>
-                        <Link href="/projects"><a>Projects</a></Link>
+                        <Link href="/projects"><a>Portfolio</a></Link>
                         <Link href="/contacts"><a>Contacts</a></Link>
                 </div>
                 <div className={styles.sidebar}></div>
