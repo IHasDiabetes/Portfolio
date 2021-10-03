@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import styles from '../styles/contacts.module.css'
-import {BsPhone} from 'react-icons/bs'
+import {MdSmartphone} from 'react-icons/md'
 import {AiFillGithub} from 'react-icons/ai'
 import line from '../public/line.png'
 import Image from 'next/image'
@@ -48,7 +48,7 @@ export default function Contacts() {
             </div>
             <div className={styles.icons}>
               <div className={styles.icon1}>
-                <BsPhone/><br/>
+                <MdSmartphone/><br/>
                 <div className={styles.text}>Tel. 0957962223</div>
               </div>
               <div className={styles.icon2}>

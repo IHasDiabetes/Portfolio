@@ -1,8 +1,8 @@
 .container {
     min-height: 100vh;
     display: grid;
-    grid-template-areas: "scroller text contents";
-    grid-template-columns: 2fr 5fr 5fr;
+    grid-template-areas: "scroller text contents .";
+    grid-template-columns: 2fr 3fr 3.5fr 1.5fr;
     
 }
 
@@ -13,13 +13,13 @@
 .title {
     font-size: 2.5rem;
     font-weight: 500;
-    margin-top: 1em;
+    margin-top: 2rem;
     margin-bottom: 0.25em;
 }
 
 .skills_container {
     width: fit-content;
-    height: 16em;
+    height: 19em;
     overflow-y: scroll;
 }
 
@@ -38,6 +38,11 @@
     padding-right: 1em;
 }
 
+.level * {
+    color: white;
+    fill: white;
+}
+
 .skills_container::-webkit-scrollbar {
     width: 0.75vw;
 }
@@ -49,4 +54,22 @@
 
 .contents {
     grid-area: contents;
+    margin-top: 6rem;
+}
+
+.image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 9em;
+    height: 9em;
+    position: relative;
+}
+
+.description {
+    margin: 1rem 2rem;
+    text-indent: 2em;
+}
+
+.dumb * {
+    color: rgba(255, 255, 255, 0.39);
 }
