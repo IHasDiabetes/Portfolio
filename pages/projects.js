@@ -21,7 +21,7 @@ export default function Projects() {
             <div className={styles.projects_logo}><Image className={styles.ukp} src={ukp} alt="UKP" /></div>
             <div className={styles.line}></div>
             <div className={styles.projects_title}>Untitled Keyboard Project</div>
-            <div className={styles.projects_description}>A website that let's you customize and build your own mechanical keyboard</div>
+            <div className={styles.projects_description}>A website that let’s you customize and build your own mechanical keyboard</div>
           </div>
           </a>
 
