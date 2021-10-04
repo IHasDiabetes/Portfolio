@@ -6,8 +6,10 @@ import Image from 'next/image'
 import js from '../public/js.png'
 import django from '../public/django.png'
 import css from '../public/css.png'
-import python from '../public/python.svg'
 import c from '../public/c.svg'
+import reactJs from '../public/reactJs.svg'
+import nextJs from '../public/nextJs.svg'
+import python from '../public/python.svg'
 import scratch from '../public/scratch.png'
 
 // import {MdLock} from 'react-icons/md'
@@ -35,19 +37,27 @@ export default function Skills() {
             </tr>
             <tr className={styles.django} onClick={()=> setSkills("django")}>
               <td className={styles.name}>Django</td>
-              <td className={styles.level}>4</td>
+              <td className={styles.level}>3</td>
             </tr>
             <tr className={styles.css} onClick={()=> setSkills("css")}>
               <td className={styles.name}>CSS</td>
               <td className={styles.level}>5</td>
             </tr>
-            <tr className={styles.python} onClick={()=> setSkills("python")}>
-              <td className={styles.name}>Python</td>
+            <tr className={styles.css} onClick={()=> setSkills("reactjs")}>
+              <td className={styles.name}>ReactJs</td>
+              <td className={styles.level}>5</td>
+            </tr>
+            <tr className={styles.python} onClick={()=> setSkills("nextjs")}>
+              <td className={styles.name}>NextJs</td>
               <td className={styles.level}>3</td>
             </tr>
             <tr className={styles.c}>
               <td className={styles.name} onClick={()=> setSkills("c")}>C</td>
               <td className={styles.level}>2</td>
+            </tr>
+            <tr className={styles.python} onClick={()=> setSkills("python")}>
+              <td className={styles.name}>Python</td>
+              <td className={styles.level}>3</td>
             </tr>
             <tr className={styles["cpp", "dumb"]}>
               <td className={styles.name}>C++</td>
@@ -82,6 +92,9 @@ export default function Skills() {
               <div className={styles.description}>
                 Javascript is probably the programming language I’m the most familiar with, I’ve used it to make many websites and it’s also the one I’ve been working with at the moment.
               </div>
+              <div className={styles.level_bar_full}>
+                Level 5/10
+              </div>
             </div>}
 
           {skills === "django" && 
@@ -91,6 +104,9 @@ export default function Skills() {
             </div>
             <div className={styles.description}>
               I’ve used Django quite a lot in my earlier stages when I was first introduced to web development. Now, I don’t really use it as much, but it definitely holds a special place in my heart being one of the first framework I’ve learnt.
+            </div>
+            <div className={styles.level_bar_half}>
+                Level 3/10
             </div>
           </div>}
 
@@ -102,6 +118,35 @@ export default function Skills() {
             <div className={styles.description}>
               CSS is used in practically every web project I’ve ever made so I’ve gotten a bit familiar with it. However, there are still so much more I need to learn about this programming language.
             </div>
+            <div className={styles.level_bar_full}>
+                Level 5/10
+            </div>
+          </div>}
+
+          {skills === "reactjs" && 
+          <div className={styles.description_container}>
+            <div className={styles.image}>
+              <Image src={reactJs} className={styles.cssImage} objectFit="contain" layout="fill"/>
+            </div>
+            <div className={styles.description}>
+              React was the language I used a lot at the end of learning my web development course. I still use this language a lot and it is a base for other languages involving javascript that I use now and ones that I’m looking forward to learning.
+            </div>
+            <div className={styles.level_bar_full}>
+                Level 5/10
+            </div>
+          </div>}
+
+          {skills === "nextjs" && 
+          <div className={styles.description_container}>
+            <div className={styles.image}>
+              <Image src={nextJs} className={styles.cssImage} objectFit="contain" layout="fill"/>
+            </div>
+            <div className={styles.description}>
+              This is the programming language I used to make this website! It’s actually my first time every using it, but to be honest I really like it, and I look forward to using it in upcomming websites that I want to make.
+            </div>
+            <div className={styles.level_bar_half}>
+                Level 3/10
+            </div>
           </div>}
 
           {skills === "python" && 
@@ -111,6 +156,9 @@ export default function Skills() {
             </div>
             <div className={styles.description}>
               To be honest, I don’t really have much experience with python itself so I’m not very confident with it. I’ve only ever used this in my school works and projects.
+            </div>
+            <div className={styles.level_bar_half}>
+                Level 3/10
             </div>
           </div>}
 
@@ -122,6 +170,9 @@ export default function Skills() {
             <div className={styles.description}>
               I’ve really been enjoying c at the moment since I’ve been learning CS50’s computer science course. I might actually prefer this style of coding more than python.
             </div>
+            <div className={styles.level_bar_half}>
+                Level 2/10
+            </div>
           </div>}
 
           {skills === "scratch" && 
@@ -130,7 +181,10 @@ export default function Skills() {
               <Image src={scratch} className={styles.scratchImage} objectFit="contain" layout="fill"/>
             </div>
             <div className={styles.description}>
-              I’m putting this here soly for respect as this is probably the first &quot;programming&quot; language I’ve ever been introduced to as a child.
+              I’m putting this here solely for respect as this is probably the first &quot;programming&quot; language I’ve ever been introduced to as a child.
+            </div>
+            <div className={styles.level_bar_scratch}>
+                Level 69/420
             </div>
           </div>}
         </div>

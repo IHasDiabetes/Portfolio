@@ -73,3 +73,21 @@
 .dumb * {
     color: rgba(255, 255, 255, 0.39);
 }
+
+.level_bar_full {
+    background-image: linear-gradient(to right, #68BBE3 , white);
+    margin: 0 4rem;
+    padding: 0 1rem;
+}
+
+.level_bar_half {
+    background-image: linear-gradient(to right, #68BBE3 , #68BBE3 , white , white , white);
+    margin: 0 4rem;
+    padding: 0 1rem;
+}
+
+.level_bar_scratch {
+    background-color: #68BBE3;
+    margin: 0 4rem;
+    padding: 0 1rem;
+}
