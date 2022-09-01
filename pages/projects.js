@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ukp from '../public/ukp.svg'
 import cs50w from '../public/CS50W.png'
+import comcamp from '../public/comcamp.png'
+import discord from '../public/discord.png'
 
 export default function Projects() {
   return (
@@ -31,6 +33,24 @@ export default function Projects() {
             <div className={styles.line}></div>
             <div className={styles.projects_title}>CS50’s Web Programming Certificate</div>
             <div className={styles.projects_description}>The certificate from CS50’s Web Programming with Python and JavaScript course</div>
+          </div>
+          </a>
+
+          <a target="_blank" href="https://drive.google.com/file/d/1C0GlrJlZKJQYOxxllchJiS3xAtZeLkjs/view?usp=sharing" rel="noopener noreferrer">
+          <div className={styles.projects_contents}>
+            <div className={styles.projects_logo}><Image className={styles.comcamp} src={comcamp} alt="Comcamp 33 Certificate" /></div>
+            <div className={styles.line}></div>
+            <div className={styles.projects_title}>Comcamp 33 Certificate</div>
+            <div className={styles.projects_description}>The certificate from the 33rd Comcamp held by KMUTT university</div>
+          </div>
+          </a>
+
+          <a target="_blank" href="https://github.com/ImSadudee/Xina-Bot" rel="noopener noreferrer">
+          <div className={styles.projects_contents}>
+            <div className={styles.projects_logo}><Image className={styles.discord} src={discord} alt="Xina Bot" /></div>
+            <div className={styles.line}></div>
+            <div className={styles.projects_title}>Xina Bot</div>
+            <div className={styles.projects_description}>A fun discord bot that has Q&amp;A features</div>
           </div>
           </a>
           <div className={styles.note}>- Got Room For More -</div>

@@ -5,7 +5,7 @@ export default function Layout({ children }) {
     return(
         <>
             <div className={styles.container}>
-                <div className={styles.github}>logo</div>
+                {/* <div className={styles.github}>logo</div> */}
                 <div className={styles.navigator}>
                         <Link href="/"><a>Home</a></Link>
                         <Link href="/about"><a>About</a></Link>

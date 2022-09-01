@@ -16,7 +16,7 @@ export default function Home() {
       <div className={styles.title_container}>
         <span className={styles.greetings}>Hi, I&apos;m Im</span>
         <div className={styles.description}>Full Stack Developer</div>
-        <button className={styles.contact_button}><Link href="/contacts"><a>Contact Me</a></Link></button>
+        <button className={styles.contact_button}><Link href="/about"><a>About Me</a></Link></button>
       </div>
       <div className={styles.picture}>
         <Image className={styles.profile} src={profile} alt="Picture of me" />
