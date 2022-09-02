@@ -53,7 +53,7 @@ export default function Contacts() {
               </div>
               <div className={styles.icon2}>
                 <div className={styles.line_container}>
-                  <Image className={styles.line} src={line}/>
+                  <Image className={styles.line} src={line} alt="line"/>
                 </div>
                 <div className={styles.text}>ID. imsadudee</div>
               </div>
