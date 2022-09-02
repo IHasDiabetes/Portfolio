@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ukp from '../public/ukp.svg'
 import cs50w from '../public/CS50W.png'
-import comcamp from '../public/comcamp.png'
+import comcamp from '../public/Comcamp.png'
 import discord from '../public/discord.png'
 
 export default function Projects() {
